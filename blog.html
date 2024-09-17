@@ -146,7 +146,7 @@
   <main class="site-content" id="content">
 
     <!-- START: Breadcrumb Area -->
-    <section class="breadcrumb_area" data-bg-image="./assets/img/breadcrumb/breadcrumb-bg.jpg" data-bg-color="#140C1C">
+    <section class="breadcrumb_area" data-bg-image="./assets/img/breadcrumb/graphicdesign-bg.jpg" data-bg-color="#140C1C">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -163,6 +163,16 @@
       </div>
     </section>
     <!-- END: Breadcrumb Area -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const breadcrumbArea = document.querySelector('.breadcrumb_area');
+        const bgImage = breadcrumbArea.getAttribute('data-bg-images');
+        if (bgImage) {
+          breadcrumbArea.style.backgroundImage = `url(${bgImage})`;
+        }
+      });
+    </script>
 
     <!-- START: Blog Section -->
     <section class="full-width tj-posts__area">
