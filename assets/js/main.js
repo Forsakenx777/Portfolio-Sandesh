@@ -71,8 +71,6 @@ Description: Gerold - Personal Portfolio HTML5 Template
 
 		lastScrollTop = scroll;
 	});
-		
-
 		/*------------------------------------------------------
   	/  Hamburger Menu
   	/------------------------------------------------------*/
