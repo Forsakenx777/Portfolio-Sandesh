@@ -1,4 +1,3 @@
-
 console.log("JavaScript file loaded");
 
 document.addEventListener("DOMContentLoaded", function() {
