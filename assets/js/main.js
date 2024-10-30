@@ -1,19 +1,54 @@
 
+// Log that the JavaScript file has loaded
 console.log("JavaScript file loaded");
 
+// Wait for the DOM content to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-  const closeButton = document.querySelector(".close-btn");
-  const popupOverlay = document.getElementById("popupOverlay");
+    const closeButton = document.querySelector(".close-btn");
+    const popupOverlay = document.getElementById("popupOverlay");
 
-  if (closeButton && popupOverlay) {
-    console.log("Elements found");
-    closeButton.addEventListener("click", function() {
-      popupOverlay.classList.add("hidden");
-    });
-  } else {
-    console.error("Elements not found");
-  }
+    // Check if the elements were found
+    if (closeButton && popupOverlay) {
+        console.log("Elements found"); // Log if elements are found
+        closeButton.addEventListener("click", function() {
+            popupOverlay.classList.add("hidden"); // Hide the popup overlay
+            console.log("Popup overlay hidden"); // Log when the overlay is hidden
+        });
+    } else {
+        console.error("Elements not found"); // Log an error if elements are not found
+    }
 });
+
+
+// Function to calculate months of experience
+function calculateExperienceMonths() {
+    const startDate = new Date('2024-06-19'); // Starting date
+    const currentDate = new Date(); // Current date
+    
+    // Calculate the total number of months between the two dates
+    let months = (currentDate.getFullYear() - startDate.getFullYear()) * 12 + (currentDate.getMonth() - startDate.getMonth());
+
+    // If the current date is before the start date
+    if (currentDate < startDate) {
+        months = 0; // If current date is before the start date
+    }
+
+    // Log the calculated months for debugging
+    console.log("Calculated months of experience: ", months);
+    
+    // Update the odometer element with the calculated months
+    document.querySelector('.odometer').innerText = months; // Update the first odometer found
+}
+// Call the function when the page loads
+window.onload = function() {
+    console.log("Calculating months of experience...");
+    calculateExperienceMonths();
+};
+
+
+// Call the function when the page loads
+window.onload = calculateExperienceMonths;
+
 
 (function ($) {
 	"use strict";
