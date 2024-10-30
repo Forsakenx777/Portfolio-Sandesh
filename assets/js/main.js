@@ -1,35 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-Theme Name: Gerold - Personal Portfolio HTML5 Template
-Theme URI: https://themejunction.net/html/gerold/demo/
-Author: Theme-Junction
-Author URI: https://themeforest.net/user/theme-junction
-Description: Gerold - Personal Portfolio HTML5 Template
-
------------------------------------------------------------------------------------
-
-/***************************************************
-==================== JS INDEX ======================
-****************************************************
-// Data js
-// Sidebar Navigation
-// Sticky Header
-// Hamburger Menu
-// Scroll To Section
-// OnePage Active Class
-// Portfolio Filter
-// Portfolio Gallery Carousel
-// Testimonial Carousel
-// Nice Select
-// ALL Popup
-// Preloader
-// Sidebar Hover BG Color
-// Services Hover BG
-// Portfolio Filter BG Color
-// Funfact
-// WoW Js
-
-****************************************************/
 console.log("JavaScript file loaded");
 
 document.addEventListener("DOMContentLoaded", function() {
