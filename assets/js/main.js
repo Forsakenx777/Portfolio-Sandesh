@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
 // Function to calculate months of experience
 function calculateExperienceMonths() {
     const startDate = new Date('2024-06-19'); // Starting date
