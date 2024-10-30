@@ -876,13 +876,43 @@ body.loaded {
 	transition: height 200ms ease;
 	transition-delay: 200ms;
 }
-/* END: Headers */
 
-/*
-* ===============================
-*  START: Hero Section
-* ===============================
-*/
+.services-section {
+    background-color: #333; /* Dark background for visibility */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.service {
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.service_items {
+    display: inline-block;
+    animation: 35s slides infinite linear; /* Duration for scrolling */
+}
+
+.service-item {
+    display: inline-block;
+    height: 60px; /* Set consistent height */
+    padding: 0 20px; /* Side padding for spacing */
+    color: white; /* White text color */
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: bold; /* Make text bold */
+    line-height: 60px; /* Vertically center text */
+}
+
+@keyframes slides {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 .hero-section {
 	padding: 200px 0 50px;
 	background: var(--tj-theme-accent-1);
