@@ -30,6 +30,21 @@ Description: Gerold - Personal Portfolio HTML5 Template
 // WoW Js
 
 ****************************************************/
+console.log("JavaScript file loaded");
+
+document.addEventListener("DOMContentLoaded", function() {
+  const closeButton = document.querySelector(".close-btn");
+  const popupOverlay = document.getElementById("popupOverlay");
+
+  if (closeButton && popupOverlay) {
+    console.log("Elements found");
+    closeButton.addEventListener("click", function() {
+      popupOverlay.classList.add("hidden");
+    });
+  } else {
+    console.error("Elements not found");
+  }
+});
 
 (function ($) {
 	"use strict";
@@ -207,6 +222,15 @@ Description: Gerold - Personal Portfolio HTML5 Template
 				},
 			},
 		});
+
+		document.addEventListener("DOMContentLoaded", function() {
+			const closeButton = document.querySelector(".close-btn");
+			const popupOverlay = document.getElementById("popupOverlay");
+		  
+			closeButton.addEventListener("click", function() {
+			  popupOverlay.classList.add("hidden");
+			});
+		  });
 
 		/*------------------------------------------------------
   	/ Post Gallery Carousel
